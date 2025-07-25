@@ -29,6 +29,7 @@ class ContentController {
             User(3, "Laura", "laura@gmail.com")
         )
         model.addAttribute("userList", userList)
+        model.addAttribute("pageTitle", "사용자 목록") // 페이지 타이틀 추가
 
         return "user-list"
     }
